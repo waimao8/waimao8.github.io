@@ -4,75 +4,117 @@
 
 
 
-<html lang="zh-Hans">
-<head>
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
-<script id="hexo-configurations">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
-    version: '7.4.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: false,
-    mediumzoom: false,
+    fastclick: false,
     lazyload: false,
-    pangu: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
-      appID: '',
+      applicationID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: '复制',
-      copy_success: '复制成功',
-      copy_failure: '复制失败'
-    },
-    sidebarPadding: 40
+    }
   };
 </script>
+
+
+  
+
+
+
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+
+
+
+
+
+  
+  
   <link rel="canonical" href="http://yoursite.com/tags/hexo/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
+
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: false,
-    isPage: false,
-    isArchive: false
   };
 </script>
 
@@ -86,8 +128,13 @@
 
 
 
+
+
+
+
   <noscript>
   <style>
+  .use-motion .motion-element,
   .use-motion .brand,
   .use-motion .menu-item,
   .sidebar-inner,
@@ -96,7 +143,7 @@
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-title { opacity: initial; }
 
   .use-motion .logo,
   .use-motion .site-title,
@@ -112,21 +159,30 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
+    
 
-    <div>
+    <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Hexo</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
+    
   </div>
 
   <div class="site-nav-toggle">
@@ -139,92 +195,53 @@
 </div>
 
 
+
 <nav class="site-nav">
   
-  <ul id="menu" class="menu">
-      
-      
+    <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
       
+    
+
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
 
   </li>
-      
-      
-      
         
-        <li class="menu-item menu-item-about">
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
       
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-tags">
-      
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-categories">
-      
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-archives">
-      
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
-  </ul>
 
-</nav>
-</div>
-    </header>
+      
+      
+    </ul>
+  
 
+  
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-            
 
     
-    
-      
-      
-    
-      
-      
-    
-      
-      
     
       
       
@@ -236,6 +253,28 @@
 
   
 
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -243,39 +282,57 @@
   
   
   <div class="post-block tag">
+
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">hexo<small>标签</small>
+        <h1>hexo<small>标签</small>
         </h1>
       </div>
 
       
+        
 
-  
-  
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  
-    
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/09/10/hexo安装的使用教程7/" itemprop="url">
+            
+              <span itemprop="name">hexo安装的使用教程7</span>
+            
+          </a>
+        
+      </h2>
 
-  <article itemscope itemtype="http://schema.org/Article">
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-10T08:11:23+08:00" content="2019-09-10">
+          09-10
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
         
           <a class="post-title-link" href="/2019/09/09/hexo安装的使用教程6/" itemprop="url">
-            <span itemprop="name">hexo安装的使用教程5</span>
+            
+              <span itemprop="name">hexo安装的使用教程5</span>
+            
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-09T23:11:23+08:00"
-              content="2019-09-09">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T23:11:23+08:00" content="2019-09-09">
           09-09
         </time>
       </div>
@@ -284,27 +341,24 @@
   </article>
 
 
+      
+        
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
         
           <a class="post-title-link" href="/2019/09/09/hexo安装的使用教程5/" itemprop="url">
-            <span itemprop="name">hexo安装的使用教程5</span>
+            
+              <span itemprop="name">hexo安装的使用教程5</span>
+            
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-09T23:01:23+08:00"
-              content="2019-09-09">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T23:01:23+08:00" content="2019-09-09">
           09-09
         </time>
       </div>
@@ -313,27 +367,24 @@
   </article>
 
 
+      
+        
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
         
           <a class="post-title-link" href="/2019/09/09/hexo安装的使用教程3/" itemprop="url">
-            <span itemprop="name">hexo安装的使用教程3</span>
+            
+              <span itemprop="name">hexo安装的使用教程3</span>
+            
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-09T22:01:23+08:00"
-              content="2019-09-09">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T22:01:23+08:00" content="2019-09-09">
           09-09
         </time>
       </div>
@@ -342,27 +393,24 @@
   </article>
 
 
+      
+        
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
         
           <a class="post-title-link" href="/2019/09/09/hexo安装的使用教程2/" itemprop="url">
-            <span itemprop="name">hexo安装的使用教程2</span>
+            
+              <span itemprop="name">hexo安装的使用教程2</span>
+            
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-09T21:01:23+08:00"
-              content="2019-09-09">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T21:01:23+08:00" content="2019-09-09">
           09-09
         </time>
       </div>
@@ -371,27 +419,24 @@
   </article>
 
 
+      
+        
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
         
           <a class="post-title-link" href="/2019/09/09/github搭建hexo博客和绑定域名的详细过程/" itemprop="url">
-            <span itemprop="name">github搭建hexo博客和绑定域名的详细过程</span>
+            
+              <span itemprop="name">github搭建hexo博客和绑定域名的详细过程</span>
+            
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-09T19:21:48+08:00"
-              content="2019-09-09">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T19:21:48+08:00" content="2019-09-09">
           09-09
         </time>
       </div>
@@ -400,8 +445,9 @@
   </article>
 
 
-
+      
     </div>
+
   </div>
   
   
@@ -415,6 +461,7 @@
           
 
         </div>
+        
           
   
   <div class="sidebar-toggle">
@@ -425,75 +472,109 @@
     </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-  <nav class="site-state motion-element">
-      <div class="site-state-item site-state-posts">
-        
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">8</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-    
       
-      
-      <div class="site-state-item site-state-categories">
-        
-          
-            <a href="/categories/">
-          
-        
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
-        </a>
-      </div>
-    
-      
-      
-      <div class="site-state-item site-state-tags">
-        
-          
-            <a href="/tags/">
-          
-        
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">标签</span>
-        </a>
-      </div>
-    
-  </nav>
 
+      
 
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
 
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
       </div>
+
+      
+
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  
 
 
+        
       </div>
     </main>
 
@@ -504,16 +585,27 @@
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+
+  
 </div>
+
+
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.0</div>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+
+
+
 
         
-
-
-
-
 
 
 
@@ -525,18 +617,96 @@
         
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
   </div>
 
   
 
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
-  <script src="/lib/anime.min.js?v=3.1.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
-<script src="/js/schemes/pisces.js?v=7.4.0"></script>
 
-<script src="/js/next-boot.js?v=7.4.0"></script>
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -545,22 +715,27 @@
 
 
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-
-
-
-
+  
 
   
 
