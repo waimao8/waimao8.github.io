@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,7 +68,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.2.0',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
@@ -96,7 +96,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://waimao8.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -108,7 +108,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="https://waimao8.github.io/">
 
 
 
@@ -240,9 +240,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -263,6 +260,9 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -282,10 +282,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/hexo安装的使用教程7/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/10/hexo安装的使用教程7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -386,38 +386,24 @@
       
         
           
-            <h1 id="安装主题（next）"><a href="#安装主题（next）" class="headerlink" title="安装主题（next）"></a>安装主题（next）</h1><p><a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a>  （大道至简）<br>下载主题解压后放到themes目录<br>编辑主目录的_config.yml 查找language   设置 language: zh-CN</p>
-<h1 id="添加分类"><a href="#添加分类" class="headerlink" title="添加分类"></a>添加分类</h1><p>1、创建“分类”选项<br>1.1 生成“分类”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+            <p>
+              安装主题（next）https://theme-next.org/docs/getting-started/https://www.haomwei.com/technology/maupassant-hexo.html  （大道至简）下载主题解压后放到themes目录编辑主目录的_config.yml 查找language   设置 language: zh-CN
+添加分类1、创建“分类”选项1.1 生成“分类”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令
+hexo new page categories
 
-<p>成功后会提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="根据上面的路径，找到index-md这个文件，打开后默认内容是这样的："><a href="#根据上面的路径，找到index-md这个文件，打开后默认内容是这样的：" class="headerlink" title="根据上面的路径，找到index.md这个文件，打开后默认内容是这样的："></a>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="给文章添加“categories”属性"><a href="#给文章添加“categories”属性" class="headerlink" title="给文章添加“categories”属性"></a>给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
-<h2 id="创建“标签”选项"><a href="#创建“标签”选项" class="headerlink" title="创建“标签”选项"></a>创建“标签”选项</h2><p>生成“标签”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>找到 source/tags/index.md<br>添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h1 id="给文章添加标签和分类"><a href="#给文章添加标签和分类" class="headerlink" title="给文章添加标签和分类"></a>给文章添加标签和分类</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="添加菜单"><a href="#添加菜单" class="headerlink" title="添加菜单"></a>添加菜单</h2><p> 编辑主题的_config.yml，查找menu，去掉 tags categories about  前面的#号就可以了</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h1 id="新增CNAME文件"><a href="#新增CNAME文件" class="headerlink" title="新增CNAME文件"></a>新增CNAME文件</h1><p>位置：hexo/source/CNAME<br>CNAME文件不要后缀<br>文件中填写你要绑定的域名<br>这样hexo d后域名才不会失效</p>
-
+成功后会提示：
+INFO  Created: ~/Documents/
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/10/hexo安装的使用教程7/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -427,7 +413,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -472,10 +460,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hexo安装的使用教程6/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hexo安装的使用教程6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -576,38 +564,24 @@
       
         
           
-            <h1 id="安装主题（next）"><a href="#安装主题（next）" class="headerlink" title="安装主题（next）"></a>安装主题（next）</h1><p><a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a>  （大道至简）<br>下载主题解压后放到themes目录<br>编辑主目录的_config.yml 查找language   设置 language: zh-CN</p>
-<h1 id="添加分类"><a href="#添加分类" class="headerlink" title="添加分类"></a>添加分类</h1><p>1、创建“分类”选项<br>1.1 生成“分类”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+            <p>
+              安装主题（next）https://theme-next.org/docs/getting-started/https://www.haomwei.com/technology/maupassant-hexo.html  （大道至简）下载主题解压后放到themes目录编辑主目录的_config.yml 查找language   设置 language: zh-CN
+添加分类1、创建“分类”选项1.1 生成“分类”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令
+hexo new page categories
 
-<p>成功后会提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="根据上面的路径，找到index-md这个文件，打开后默认内容是这样的："><a href="#根据上面的路径，找到index-md这个文件，打开后默认内容是这样的：" class="headerlink" title="根据上面的路径，找到index.md这个文件，打开后默认内容是这样的："></a>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="给文章添加“categories”属性"><a href="#给文章添加“categories”属性" class="headerlink" title="给文章添加“categories”属性"></a>给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
-<h2 id="创建“标签”选项"><a href="#创建“标签”选项" class="headerlink" title="创建“标签”选项"></a>创建“标签”选项</h2><p>生成“标签”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>找到 source/tags/index.md<br>添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h1 id="给文章添加标签和分类"><a href="#给文章添加标签和分类" class="headerlink" title="给文章添加标签和分类"></a>给文章添加标签和分类</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="添加菜单"><a href="#添加菜单" class="headerlink" title="添加菜单"></a>添加菜单</h2><p> 编辑主题的_config.yml，查找menu，去掉 tags categories about  前面的#号就可以了</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h1 id="新增CNAME文件"><a href="#新增CNAME文件" class="headerlink" title="新增CNAME文件"></a>新增CNAME文件</h1><p>位置：hexo/source/CNAME<br>CNAME文件不要后缀<br>文件中填写你要绑定的域名<br>这样hexo d后域名才不会失效</p>
-
+成功后会提示：
+INFO  Created: ~/Documents/
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hexo安装的使用教程6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -617,7 +591,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -662,10 +638,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hexo安装的使用教程5/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hexo安装的使用教程5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -766,37 +742,23 @@
       
         
           
-            <h2 id="一、安装主题（next）"><a href="#一、安装主题（next）" class="headerlink" title="一、安装主题（next）"></a>一、安装主题（next）</h2><p><a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a>  （大道至简）<br>下载主题解压后放到themes目录<br>编辑主目录的_config.yml 查找language   设置 language: zh-CN</p>
-<h2 id="二、添加分类"><a href="#二、添加分类" class="headerlink" title="二、添加分类"></a>二、添加分类</h2><h1 id="创建“分类”选项"><a href="#创建“分类”选项" class="headerlink" title="创建“分类”选项"></a>创建“分类”选项</h1><h1 id="生成“分类”页并添加tpye属性"><a href="#生成“分类”页并添加tpye属性" class="headerlink" title="生成“分类”页并添加tpye属性"></a>生成“分类”页并添加tpye属性</h1><p>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+            <p>
+              一、安装主题（next）https://theme-next.org/docs/getting-started/https://www.haomwei.com/technology/maupassant-hexo.html  （大道至简）下载主题解压后放到themes目录编辑主目录的_config.yml 查找language   设置 language: zh-CN
+二、添加分类创建“分类”选项生成“分类”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令
+hexo new page categories
 
-<h1 id="成功后会提示："><a href="#成功后会提示：" class="headerlink" title="成功后会提示："></a>成功后会提示：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<h1 id="根据上面的路径，找到index-md这个文件，打开后默认内容是这样的："><a href="#根据上面的路径，找到index-md这个文件，打开后默认内容是这样的：" class="headerlink" title="根据上面的路径，找到index.md这个文件，打开后默认内容是这样的："></a>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="三、给文章添加“categories”属性"><a href="#三、给文章添加“categories”属性" class="headerlink" title="三、给文章添加“categories”属性"></a>三、给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
-<h2 id="四、创建“标签”选项"><a href="#四、创建“标签”选项" class="headerlink" title="四、创建“标签”选项"></a>四、创建“标签”选项</h2><h1 id="生成“标签”页并添加tpye属性"><a href="#生成“标签”页并添加tpye属性" class="headerlink" title="生成“标签”页并添加tpye属性"></a>生成“标签”页并添加tpye属性</h1><p>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<h1 id="找到-source-tags-index-md"><a href="#找到-source-tags-index-md" class="headerlink" title="找到 source/tags/index.md"></a>找到 source/tags/index.md</h1><p>添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="五、给文章添加标签和分类"><a href="#五、给文章添加标签和分类" class="headerlink" title="五、给文章添加标签和分类"></a>五、给文章添加标签和分类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="六、添加菜单"><a href="#六、添加菜单" class="headerlink" title="六、添加菜单"></a>六、添加菜单</h2><p> 编辑主题的_config.yml，查找menu，去掉 tags categories about  前面的#号就可以了</p>
-<h2 id="7、绑定域名"><a href="#7、绑定域名" class="headerlink" title="7、绑定域名"></a>7、绑定域名</h2><p> 新增CNAME文件<br>位置：hexo/source/CNAME<br>CNAME文件不要后缀<br>文件中填写你要绑定的域名<br>这样hexo d后域名才不会失效</p>
-
+成功后会提示：INFO  Created: ~/Documents/blo
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hexo安装的使用教程5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -806,7 +768,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -851,10 +815,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hexo安装的使用教程3/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hexo安装的使用教程3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -955,38 +919,24 @@
       
         
           
-            <h2 id="安装主题（next）"><a href="#安装主题（next）" class="headerlink" title="安装主题（next）"></a>安装主题（next）</h2><p><a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a>  （大道至简）<br>下载主题解压后放到themes目录<br>编辑主目录的_config.yml 查找language   设置 language: zh-CN</p>
-<h2 id="添加分类"><a href="#添加分类" class="headerlink" title="添加分类"></a>添加分类</h2><p>1、创建“分类”选项<br>1.1 生成“分类”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+            <p>
+              安装主题（next）https://theme-next.org/docs/getting-started/https://www.haomwei.com/technology/maupassant-hexo.html  （大道至简）下载主题解压后放到themes目录编辑主目录的_config.yml 查找language   设置 language: zh-CN
+添加分类1、创建“分类”选项1.1 生成“分类”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令
+hexo new page categories
 
-<p>成功后会提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<h1 id="根据上面的路径，找到index-md这个文件，打开后默认内容是这样的："><a href="#根据上面的路径，找到index-md这个文件，打开后默认内容是这样的：" class="headerlink" title="根据上面的路径，找到index.md这个文件，打开后默认内容是这样的："></a>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="给文章添加“categories”属性"><a href="#给文章添加“categories”属性" class="headerlink" title="给文章添加“categories”属性"></a>给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
-<h2 id="创建“标签”选项"><a href="#创建“标签”选项" class="headerlink" title="创建“标签”选项"></a>创建“标签”选项</h2><p>生成“标签”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>找到 source/tags/index.md<br>添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="给文章添加标签和分类"><a href="#给文章添加标签和分类" class="headerlink" title="给文章添加标签和分类"></a>给文章添加标签和分类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="添加菜单"><a href="#添加菜单" class="headerlink" title="添加菜单"></a>添加菜单</h2><p> 编辑主题的_config.yml，查找menu，去掉 tags categories about  前面的#号就可以了</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p> 新增CNAME文件<br>位置：hexo/source/CNAME<br>CNAME文件不要后缀<br>文件中填写你要绑定的域名<br>这样hexo d后域名才不会失效</p>
-
+成功后会提示：
+INFO  Created: ~/Documents/
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hexo安装的使用教程3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -996,7 +946,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1041,10 +993,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/Hexo博客NexT主题美化之自定义文章底部版权声明/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/Hexo博客NexT主题美化之自定义文章底部版权声明/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1130,9 +1082,20 @@
       
         
           
-            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/hao131416888/article/details/100676542" target="_blank" rel="noopener">https://blog.csdn.net/hao131416888/article/details/100676542</a>   </p>
-<h1 id="看下有没有"><a href="#看下有没有" class="headerlink" title="看下有没有"></a><a href></a>看下有没有</h1><h2 id="有的，我去了"><a href="#有的，我去了" class="headerlink" title="有的，我去了"></a><a href></a>有的，我去了</h2><h1 id="值得去做吗"><a href="#值得去做吗" class="headerlink" title="值得去做吗"></a><a href></a>值得去做吗</h1><h2 id="当然值得了，哈哈哈"><a href="#当然值得了，哈哈哈" class="headerlink" title="当然值得了，哈哈哈"></a><a href></a>当然值得了，哈哈哈</h2><h1 id="做的非常好"><a href="#做的非常好" class="headerlink" title="做的非常好"></a><a href></a>做的非常好</h1><h2 id="是的，谢谢夸奖"><a href="#是的，谢谢夸奖" class="headerlink" title="是的，谢谢夸奖"></a><a href></a>是的，谢谢夸奖</h2><h1 id="结束了"><a href="#结束了" class="headerlink" title="结束了"></a><a href></a>结束了</h1><h2 id="应该没有吧"><a href="#应该没有吧" class="headerlink" title="应该没有吧"></a><a href></a>应该没有吧</h2><h3 id="已经结束了哦"><a href="#已经结束了哦" class="headerlink" title="已经结束了哦"></a><a href></a>已经结束了哦</h3>
+            <p>
+                 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。  本文链接：https://blog.csdn.net/hao131416888/article/details/100676542   
+看下有没有有的，我去了值得去做吗当然值得了，哈哈哈做的非常好是的，谢谢夸奖结束了应该没有吧已经结束了哦
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/Hexo博客NexT主题美化之自定义文章底部版权声明/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1142,7 +1105,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1187,10 +1152,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hexo安装的使用教程2/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hexo安装的使用教程2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1291,38 +1256,24 @@
       
         
           
-            <h2 id="一、安装主题（next）"><a href="#一、安装主题（next）" class="headerlink" title="一、安装主题（next）"></a>一、安装主题（next）</h2><p><a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a>  （大道至简）<br>下载主题解压后放到themes目录<br>编辑主目录的_config.yml 查找language   设置 language: zh-CN</p>
-<h2 id="二、添加分类"><a href="#二、添加分类" class="headerlink" title="二、添加分类"></a>二、添加分类</h2><p>1、创建“分类”选项<br>1.1 生成“分类”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+            <p>
+              一、安装主题（next）https://theme-next.org/docs/getting-started/https://www.haomwei.com/technology/maupassant-hexo.html  （大道至简）下载主题解压后放到themes目录编辑主目录的_config.yml 查找language   设置 language: zh-CN
+二、添加分类1、创建“分类”选项1.1 生成“分类”页并添加tpye属性打开命令行，进入博客所在文件夹。执行命令
+hexo new page categories
 
-<p>成功后会提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<h1 id="根据上面的路径，找到index-md这个文件，打开后默认内容是这样的："><a href="#根据上面的路径，找到index-md这个文件，打开后默认内容是这样的：" class="headerlink" title="根据上面的路径，找到index.md这个文件，打开后默认内容是这样的："></a>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="三、给文章添加“categories”属性"><a href="#三、给文章添加“categories”属性" class="headerlink" title="三、给文章添加“categories”属性"></a>三、给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
-<h2 id="四、创建“标签”选项"><a href="#四、创建“标签”选项" class="headerlink" title="四、创建“标签”选项"></a>四、创建“标签”选项</h2><p>生成“标签”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>找到 source/tags/index.md<br>添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存并关闭文件。</p>
-<h2 id="五、给文章添加标签和分类"><a href="#五、给文章添加标签和分类" class="headerlink" title="五、给文章添加标签和分类"></a>五、给文章添加标签和分类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="六、添加菜单"><a href="#六、添加菜单" class="headerlink" title="六、添加菜单"></a>六、添加菜单</h2><p> 编辑主题的_config.yml，查找menu，去掉 tags categories about  前面的#号就可以了</p>
-<h2 id="7、绑定域名"><a href="#7、绑定域名" class="headerlink" title="7、绑定域名"></a>7、绑定域名</h2><p> 新增CNAME文件<br>位置：hexo/source/CNAME<br>CNAME文件不要后缀<br>文件中填写你要绑定的域名<br>这样hexo d后域名才不会失效</p>
-
+成功后会提示：
+INFO  Created: ~/Docume
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hexo安装的使用教程2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1332,7 +1283,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1377,10 +1330,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/github搭建hexo博客和绑定域名的详细过程/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/github搭建hexo博客和绑定域名的详细过程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1481,59 +1434,25 @@
       
         
           
-            <h2 id="1、https-github-com-先注册账号-比如我的是-waimao8"><a href="#1、https-github-com-先注册账号-比如我的是-waimao8" class="headerlink" title="1、https://github.com/ 先注册账号 比如我的是 waimao8"></a><a href></a>1、<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 先注册账号 比如我的是 waimao8</h2><h2 id="2、New-repository-waimao8-github-io"><a href="#2、New-repository-waimao8-github-io" class="headerlink" title="2、New repository waimao8.github.io"></a><a href></a>2、New repository waimao8.github.io</h2><h2 id="3、下载git-https-git-scm-com-downloads-默认安装-安装好后，用git-–version-来查看一下版本"><a href="#3、下载git-https-git-scm-com-downloads-默认安装-安装好后，用git-–version-来查看一下版本" class="headerlink" title="3、下载git https://git-scm.com/downloads 默认安装 安装好后，用git –version 来查看一下版本"></a><a href></a>3、下载git <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 默认安装 安装好后，用git –version 来查看一下版本</h2><h2 id="4、下载-https-nodejs-org-en-download-选LTS-默认安装-，安装完后，打开命令行"><a href="#4、下载-https-nodejs-org-en-download-选LTS-默认安装-，安装完后，打开命令行" class="headerlink" title="4、下载 https://nodejs.org/en/download/ 选LTS 默认安装 ，安装完后，打开命令行"></a><a href></a>4、下载 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 选LTS 默认安装 ，安装完后，打开命令行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+            <p>
+              1、https://github.com/ 先注册账号 比如我的是 waimao82、New repository waimao8.github.io3、下载git https://git-scm.com/downloads 默认安装 安装好后，用git –version 来查看一下版本4、下载 https://nodejs.org/en/download/ 选LTS 默认安装 ，安装完后，打开命令行node -v
 
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+npm -v
 
 
-<h2 id="5、安装hexo"><a href="#5、安装hexo" class="headerlink" title="5、安装hexo"></a><a href></a>5、安装hexo</h2><p> 先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）<br> 输入命令  <code>npm install -g hexo-cli</code><br> 用 hexo -v 查看一下版本<br> 初始化一下hexo<br> hexo init myblog 或者hexo init<br> cd /D/hexo/blog/myblog (每个人的安装目录都不一样，可参考我的)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p> 在浏览器输入localhost:4000就可以看到你生成的博客了</p>
-<h2 id="6、生成SSH添加到GitHub"><a href="#6、生成SSH添加到GitHub" class="headerlink" title="6、生成SSH添加到GitHub"></a><a href></a>6、生成SSH添加到GitHub</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-
-<p> 这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱<br> 检查一下你有没有输对</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-
-<p> 然后创建SSH,一路回车<br> ssh-keygen -t rsa -C “youremail”<br> 这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹<br> 一般在这个位置c/Users/Administrator/.ssh/<br> GitHub的最右上角setting中，找到SSH keys的设置选项，点击New SSH key<br> 把你的id_rsa.pub里面的信息复制进去<br> 在gitbash中，查看是否成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p> 如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi liuxianan! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
-
-<p> 看到这个信息说明SSH已配置成功！</p>
-<p> 此时你还需要配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;liuxianan&quot;// 你的github用户名，非昵称</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="7、将hexo部署到GitHub"><a href="#7、将hexo部署到GitHub" class="headerlink" title="7、将hexo部署到GitHub"></a><a href></a>7、将hexo部署到GitHub</h2><p> 打开站点配置文件 _config.yml，翻到最后，修改为<br> YourgithubName就是你的GitHub账户</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p> 安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p> 然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p> hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br> hexo deploy 部署文章，可以用hexo d缩写</p>
-<p> 注意deploy时可能要你输入username和password。</p>
-<p> 得到下图就说明部署成功了，过一会儿就可以在 <a href="http://waimao8.github.io" target="_blank" rel="noopener">http://waimao8.github.io </a>这个网站看到你的博客了！！</p>
-<h2 id="8、设置个人域名"><a href="#8、设置个人域名" class="headerlink" title="8、设置个人域名"></a><a href></a>8、设置个人域名</h2><p> 打开cmd<br> ping waimao8.github.io<br> 得到ip：185.199.110.153<br> 添加域名解析，A到185.199.110.153<br> ping下哪个ip的访问速度快，就A到哪里ip<br> 点击添加解析，记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个www和@，线路就默认就行了，CNAME记录值填你的github博客网址 比如我的 waimao8.github.io<br> Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名<br> 新域名配置完成，可以访问了</p>
-
+5、安装hexo 先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开） 输入命令  npm install -g
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/github搭建hexo博客和绑定域名的详细过程/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1543,7 +1462,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1588,10 +1509,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hexo安装的使用教程/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hexo安装的使用教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1677,35 +1598,20 @@
       
         
           
-            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/hao131416888/article/details/89063086" target="_blank" rel="noopener">https://blog.csdn.net/hao131416888/article/details/89063086</a>   </p>
-<p>  一、安装主题（next）<br> <a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">https://theme-next.org/docs/getting-started/</a><br> <a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">https://www.haomwei.com/technology/maupassant-hexo.html</a> （大道至简）<br> 下载主题解压后放到themes目录<br> 编辑主目录的_config.yml 查找language 设置 language: zh-CN<br> 二、添加分类<br> 1、创建“分类”选项<br> 1.1 生成“分类”页并添加tpye属性<br> 打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p> 成功后会提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
-
-<p> 根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p> 添加type: “categories”到内容中，添加后是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:30:00</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p> 保存并关闭文件。</p>
-<p> 三、给文章添加“categories”属性<br> 打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: 2019-04-07 0:31:22</span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p> 至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。<br> 四、创建“标签”选项<br> 生成“标签”页并添加tpye属性<br> 打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p> 找到 source/tags/index.md<br> 添加type: “tags”到内容中，添加后是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2019-04-07 0:33:55</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p> 保存并关闭文件。<br> 五、给文章添加标签和分类</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: title #文章標題</span><br><span class="line">date: 2019-04-07 00:43:12 #文章生成時間</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分類目錄 可以省略</span><br><span class="line">tags: #文章標籤 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你對本頁的描述 可以省略</span><br></pre></td></tr></table></figure>
-
-<p> 六、添加菜单<br> 编辑主题的_config.yml，查找menu，去掉 tags categories about 前面的#号就可以了<br> 7、绑定域名<br> 新增CNAME文件<br> 位置：hexo/source/CNAME<br> CNAME文件不要后缀<br> 文件中填写你要绑定的域名<br> 这样hexo d后域名才不会失效</p>
-
+            <p>
+                 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。  本文链接：https://blog.csdn.net/hao131416888/article/details/89063086   
+  一、安装主题（next） https://theme-next.org/docs/getting-started/ https://www.haomwei.com/technology/maupassant-hexo.html （大道至简） 下载主题解压后放到themes目录 编辑主目录的_config.yml 查找language 设置 la
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hexo安装的使用教程/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1715,7 +1621,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1760,10 +1668,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://waimao8.github.io/2019/09/09/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="外贸8 微信：16675999163">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1845,21 +1753,25 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <p>
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new "My New Post"
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+More info: Writing
+Run server$ hexo server
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+More in
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/09/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1869,7 +1781,9 @@
     
     
     
-
+<div>
+    
+</div>
     
 
     
@@ -1930,7 +1844,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">外贸8 微信：16675999163</p>
               <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
@@ -2031,7 +1945,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">外贸8 微信：16675999163</span>
 
   
 
@@ -2047,7 +1961,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
 
 
 
@@ -2135,7 +2049,10 @@
   
 
 
-  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
 
 
 
