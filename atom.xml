@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://163168.xyz</id>
     <title>Gridea</title>
-    <updated>2020-01-29T07:09:04.290Z</updated>
+    <updated>2020-01-29T07:12:14.173Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://163168.xyz"/>
     <link rel="self" href="https://163168.xyz/atom.xml"/>
@@ -10,21 +10,6 @@
     <logo>https://163168.xyz/images/avatar.png</logo>
     <icon>https://163168.xyz/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[惹我认为]]></title>
-        <id>https://163168.xyz/post/99</id>
-        <link href="https://163168.xyz/post/99">
-        </link>
-        <updated>2020-01-29T06:20:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>额外发热给他人</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>额外发热给他人</p>
-<!-- more -->
-<p>tryt</p>
-<!-- more -->
-<p>iuoui</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://163168.xyz/post/hello-gridea</id>
