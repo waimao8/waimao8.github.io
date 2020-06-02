@@ -20,21 +20,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="https:&#x2F;&#x2F;github.com&#x2F; 先注册账号 比如我的是 waimao8 New repository waimao8.github.io 下载git https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 默认安装 安装好后，用git –version 来查看一下版本 下载 https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; 选LTS 默认安装 ，安装完后，打开命令行">
+  <meta name="description" content="N1安装好omv后，进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github搭建hexo博客和绑定域名的详细过程">
-<meta property="og:url" content="http://yoursite.com/archives/2.html">
+<meta property="og:title" content="N1安装omv后安装docker+transmission+lnmp搭建网站">
+<meta property="og:url" content="http://yoursite.com/posts/8.html">
 <meta property="og:site_name" content="外贸8教程网">
-<meta property="og:description" content="https:&#x2F;&#x2F;github.com&#x2F; 先注册账号 比如我的是 waimao8 New repository waimao8.github.io 下载git https:&#x2F;&#x2F;git-scm.com&#x2F;downloads 默认安装 安装好后，用git –version 来查看一下版本 下载 https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; 选LTS 默认安装 ，安装完后，打开命令行">
+<meta property="og:description" content="N1安装好omv后，进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-09-09T11:21:48.000Z">
-<meta property="article:modified_time" content="2020-03-18T15:17:13.964Z">
+<meta property="article:published_time" content="2019-12-08T10:31:42.000Z">
+<meta property="article:modified_time" content="2020-03-16T03:53:20.135Z">
 <meta property="article:author" content="外贸8 微信：16675999163">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="斐讯N1">
+<meta property="article:tag" content="omv">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="lnmp">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2.html">
+<link rel="canonical" href="http://yoursite.com/posts/8.html">
 
 
 <script id="page-configurations">
@@ -47,7 +49,7 @@
   };
 </script>
 
-  <title>github搭建hexo博客和绑定域名的详细过程 | 外贸8教程网</title>
+  <title>N1安装omv后安装docker+transmission+lnmp搭建网站 | 外贸8教程网</title>
   
 
 
@@ -201,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/archives/2.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/8.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -214,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          github搭建hexo博客和绑定域名的详细过程
+          N1安装omv后安装docker+transmission+lnmp搭建网站
         </h1>
 
         <div class="post-meta">
@@ -224,14 +226,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-09 19:21:48" itemprop="dateCreated datePublished" datetime="2019-09-09T19:21:48+08:00">2019-09-09</time>
+              <time title="创建时间：2019-12-08 18:31:42" itemprop="dateCreated datePublished" datetime="2019-12-08T18:31:42+08:00">2019-12-08</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-18 23:17:13" itemprop="dateModified" datetime="2020-03-18T23:17:13+08:00">2020-03-18</time>
+                <time title="修改时间：2020-03-16 11:53:20" itemprop="dateModified" datetime="2020-03-16T11:53:20+08:00">2020-03-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -239,7 +241,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                  <a href="/categories/%E6%96%90%E8%AE%AFN1/" itemprop="url" rel="index"><span itemprop="name">斐讯N1</span></a>
                 </span>
             </span>
 
@@ -259,8 +261,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/archives/2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/2.html" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/8.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/8.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -270,14 +272,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -289,48 +291,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 先注册账号 比如我的是 waimao8</p>
-<p>New repository waimao8.github.io</p>
-<p>下载git <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 默认安装 安装好后，用git –version 来查看一下版本</p>
-<p>下载 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 选LTS 默认安装 ，安装完后，打开命令行</p>
+        <p>N1安装好omv后，<br>进入系统，常规设置，修改web管理员密码，需要安装的lnmp搭建网站的话，还需要修改端口，自动登出时间可以设置为1天。<br>进入磁盘，文件管理，挂着ext4格式的U盘或者硬盘（其他格式的不能修改权限比如777 755等）</p>
 <a id="more"></a>
+<p>进入共享文件夹，设置共享，设置ftp nfs smb 等<br>进入omv-extars，打开docker ce<br>进入插件安装transmissionbt ，webdav docker<br>启动容器，设置路径数据盘，避免8G内存不够用</p>
+<p>安装transmission-web 看官方的教程</p>
+<p><a href="https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN" target="_blank" rel="noopener">https://github.com/ronggang/transmission-web-control/wiki/Linux-Installation-CN</a></p>
+<p>安装最新发布版本</p>
+<!-- more -->
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p> 先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）<br> 输入命令  <code>npm install -g hexo-cli</code><br> 用 hexo -v 查看一下版本<br> 初始化一下hexo<br> hexo init myblog 或者hexo init<br> cd /D/hexo/blog/myblog (每个人的安装目录都不一样，可参考我的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p> 在浏览器输入localhost:4000就可以看到你生成的博客了</p>
-<h1 id="生成SSH添加到GitHub"><a href="#生成SSH添加到GitHub" class="headerlink" title="生成SSH添加到GitHub"></a>生成SSH添加到GitHub</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<p> 这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱<br> 检查一下你有没有输对</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-<p> 然后创建SSH,一路回车<br> ssh-keygen -t rsa -C “youremail”<br> 这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹<br> 一般在这个位置c/Users/Administrator/.ssh/<br> GitHub的最右上角setting中，找到SSH keys的设置选项，点击New SSH key<br> 把你的id_rsa.pub里面的信息复制进去<br> 在gitbash中，查看是否成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p> 如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi liuxianan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
-<p> 看到这个信息说明SSH已配置成功！</p>
-<p> 此时你还需要配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;liuxianan&quot;&#x2F;&#x2F; 你的github用户名，非昵称</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email  &quot;xxx@qq.com&quot;&#x2F;&#x2F; 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
-
-<h1 id="将hexo部署到GitHub"><a href="#将hexo部署到GitHub" class="headerlink" title="将hexo部署到GitHub"></a>将hexo部署到GitHub</h1><p> 打开站点配置文件 _config.yml，翻到最后，修改为<br> YourgithubName就是你的GitHub账户</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  或者 </span><br><span class="line">  repo:git@github.com:waimao8&#x2F;waimao8.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p> 安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p> 然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p> hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br> hexo deploy 部署文章，可以用hexo d缩写</p>
-<p> 注意deploy时可能要你输入username和password。</p>
-<p> 得到下图就说明部署成功了，过一会儿就可以在 <a href="http://waimao8.github.io" target="_blank" rel="noopener">http://waimao8.github.io </a>这个网站看到你的博客了！！</p>
-<h1 id="设置个人域名"><a href="#设置个人域名" class="headerlink" title="设置个人域名"></a>设置个人域名</h1><p> 打开cmd<br> ping waimao8.github.io<br> 得到ip：185.199.110.153<br> 添加域名解析，A到185.199.110.153<br> ping下哪个ip的访问速度快，就A到哪里ip<br> 点击添加解析，记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个www和@，线路就默认就行了，CNAME记录值填你的github博客网址 比如我的 waimao8.github.io<br> Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名<br> 新域名配置完成，可以访问了</p>
+<p>docker安装portainer</p>
+<blockquote>
+<p>docker run -d -p 9888:9000 <br>–restart=always <br>-v /var/run/docker.sock:/var/run/docker.sock <br>–name prtainer-test <br>docker.io/portainer/portainer</p>
+</blockquote>
+<p>docker run -d -p 9888:9000 –restart=always –name portainer -v /var/run/docker.sock:/var/run/docker.sock -v /Users/lee/dev/docker_file/portainer/data:/data docker.io/portainer/portainer<br>安装lnmp（我试过通过docker安装deibian后安装lnmp和宝塔，omv是改过端口的，安装后omv还是打不开，所以我选择直接安装）<br>宝塔会占内存，经常安装出错，所以我选择安装lnmp无人值守安装<br><a href="https://lnmp.org/auto.html" target="_blank" rel="noopener">https://lnmp.org/auto.html</a> 选择版本<br>无人值守安装命令：<br>wget <a href="http://soft.vpser.net/lnmp/lnmp1.6.tar.gz" target="_blank" rel="noopener">http://soft.vpser.net/lnmp/lnmp1.6.tar.gz</a> -cO lnmp1.6.tar.gz &amp;&amp; tar zxf lnmp1.6.tar.gz &amp;&amp; cd lnmp1.6 &amp;&amp; LNMP_Auto=”y” DBSelect=”3” DB_Root_Password=”lnmp.org” InstallInnodb=”y” PHPSelect=”8” SelectMalloc=”1” ./install.sh lnmp<br>默认数据库密码是lnmp.org 大家可以先修改<br>一切都是自动的，大概要2个小时，安装好后，打开NI的ip<br>在首页可以看到 查看本地环境: 探针 phpinfo phpMyAdmin<br>再参考<br>LNMP添加、删除虚拟主机及伪静态使用教程<br><a href="https://lnmp.org/faq/lnmp-vhost-add-howto.html" target="_blank" rel="noopener">https://lnmp.org/faq/lnmp-vhost-add-howto.html</a><br>安装好后，先停止 nginx<br>lnmp nginx stop<br>移动wwwroot文件夹到数据盘比如我的数据盘目录是/sharedfolders/2t/www<br>mv /home/wwwroot /sharedfolders/2t/www<br>将数据盘的wwwroot印射回/home/wwwroot<br>ln -s /sharedfolders/2t/www/wwwroot /home/wwwroot<br>这样网站的数据就不占N1的空间了，都是在外接的数据盘上面了（必须ext4格式）<br>添加域名后/home/wwwroot/目录回有一个域名的目录，在里面上传php程序安装，（比如我的这个博客typecho）</p>
+<p>下面是lnmp相关的命令<br>添加主机</p>
+<p>lnmp vhost add<br>修改添加的主机的端口<br>/usr/local/nginx/conf/vhost</p>
+<p>重启lnmp start|stop|restart 启动停止重新启动</p>
+<p>lnmp restart<br>lnmp nginx restart</p>
+<p>列出网站(虚拟主机)<br>执行：lnmp vhost list</p>
+<p>删除网站(虚拟主机)<br>执行：lnmp vhost del</p>
 
     </div>
 
@@ -346,7 +325,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/archives/2.html" title="github搭建hexo博客和绑定域名的详细过程">http://yoursite.com/archives/2.html</a>
+    <a href="http://yoursite.com/posts/8.html" title="N1安装omv后安装docker+transmission+lnmp搭建网站">http://yoursite.com/posts/8.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -357,8 +336,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/%E6%96%90%E8%AE%AFN1/" rel="tag"># 斐讯N1</a>
+              <a href="/tags/omv/" rel="tag"># omv</a>
+              <a href="/tags/docker/" rel="tag"># docker</a>
+              <a href="/tags/lnmp/" rel="tag"># lnmp</a>
           </div>
 
         
@@ -367,12 +348,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/archives/1.html" rel="prev" title="hexo安装后的使用教程">
-      <i class="fa fa-chevron-left"></i> hexo安装后的使用教程
+    <a href="/posts/7.html" rel="prev" title="斐讯N1安Armbian安装OMV安装nginx+mysql安装typecho全过程">
+      <i class="fa fa-chevron-left"></i> 斐讯N1安Armbian安装OMV安装nginx+mysql安装typecho全过程
     </a></div>
       <div class="post-nav-item">
-    <a href="/archives/3.html" rel="next" title="hexo博客备份迁移教程">
-      hexo博客备份迁移教程 <i class="fa fa-chevron-right"></i>
+    <a href="/posts/9.html" rel="next" title="戴尔笔记本E6430安装黑苹果的全部过程">
+      戴尔笔记本E6430安装黑苹果的全部过程 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -434,7 +415,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成SSH添加到GitHub"><span class="nav-number">2.</span> <span class="nav-text">生成SSH添加到GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将hexo部署到GitHub"><span class="nav-number">3.</span> <span class="nav-text">将hexo部署到GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置个人域名"><span class="nav-number">4.</span> <span class="nav-text">设置个人域名</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
